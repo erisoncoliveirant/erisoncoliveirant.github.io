@@ -6,14 +6,14 @@ $(function() {
 
         timeToHide: 1200, //Time in milliseconds for fakeLoader disappear
 
-        zIndex: "999",//Default zIndex
+        zIndex: "999", //Default zIndex
 
-        spinner: "spinner3",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+        spinner: "spinner3", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
 
         bgColor: "#212121" //Hex, RGB or RGBA colors
 
     });
-       
+
     // smooth scroll
     $("a").on("click", function(event) {
 
@@ -47,7 +47,7 @@ $(function() {
     $('.collapse-show').collapse();
 
     // porfolio filterizr
-    $('.filtr-container').imagesLoaded( function() {
+    $('.filtr-container').imagesLoaded(function() {
         var filterizr = $('.filtr-container').filterizr();
     });
 
@@ -73,10 +73,9 @@ $(function() {
 
         var vScroll = $(this).scrollTop();
 
-        if( vScroll > 100) {
+        if (vScroll > 100) {
             $(".navbar").addClass("fix");
-        }
-        else {
+        } else {
             $(".navbar").removeClass("fix");
         }
 
